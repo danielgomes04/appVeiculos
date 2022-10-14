@@ -24,7 +24,7 @@ class CaminhaoController extends Controller
                 'marca' => 'string|required',
                 'ano' => 'string|required',
                 'cor' => 'string|required',
-                'valor' => 'string|nullable'
+                'valor' => 'string|required'
             ]
         );
 

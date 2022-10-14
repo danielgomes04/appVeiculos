@@ -27,8 +27,8 @@
             Caminhões
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{'/cadastrar-caminhao'}}">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Buscar</a></li>
+            <li><a class="dropdown-item" href="{{'/cadastrarCaminhao'}}">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="editarCaminhao">Editar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{{'/editar-caminhao'}}">Gerenciar</a></li>
           </ul>
