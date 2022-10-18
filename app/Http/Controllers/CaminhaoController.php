@@ -31,4 +31,17 @@ class CaminhaoController extends Controller
         Caminhao::create($dadosCaminhao);
         return Redirect::route('home');
     }
+
+    public function Lista()
+    {
+        return view('listaCaminhao');
+    }
+
+    public function MostrarEditarCaminhao()
+    {
+        $dadosCaminhao = Caminhao::all();
+        //dd($dadosCaminhao);
+        return view('editarCaminhao',[
+            'registrosCaminhao' => $dadosCaminhao]);
+    }
 }

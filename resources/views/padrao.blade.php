@@ -30,7 +30,7 @@
             <li><a class="dropdown-item" href="{{'/cadastrarCaminhao'}}">Cadastrar</a></li>
             <li><a class="dropdown-item" href="editarCaminhao">Editar</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="{{'/editar-caminhao'}}">Gerenciar</a></li>
+            <li><a class="dropdown-item" href="{{'/listaCaminhao'}}">Lista de caminhões</a></li>
           </ul>
         </li>
 

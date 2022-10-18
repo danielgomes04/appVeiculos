@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CaminhaoController;
 use App\Http\Controllers\CarrosController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,8 +22,9 @@ use App\Http\Controllers\CarrosController;
 
 
 Route::get('/',[HomeController::class,'MostrarHome'])->name('home');
-Route::get('/editarCaminhao',[CaminhaoController::class,'Editar'])->name('editar');
+Route::get('/editarCaminhao',[CaminhaoController::class,'MostrarEditarCaminhao'])->name('editar');
 Route::get('/cadastrarCaminhao',[CaminhaoController::class,'FormularioCadastro'])->name('cadastrarCaminhao');
 Route::post('/cadastrarCaminhao',[CaminhaoController::class,'SalvarBanco'])->name('salvar-banco');
+Route::get('/listaCaminhao',[CaminhaoController::class,'Lista'])->name('lista-caminhao');
 Route::get('cadastrarCarro',[CarrosController::class,'FormularioCadastroCarro'])->name('cadastrarCarro');
 Route::post('/cadastrarCarro',[CarrosController::class,'SalvarBancoCarros'])->name('salvar-banco-carro');
