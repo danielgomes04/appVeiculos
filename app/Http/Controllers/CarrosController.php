@@ -31,4 +31,19 @@ class CarrosController extends Controller
         Carros::create($dadosCarro);
         return Redirec::route('home');
     }
+
+    public function MostrarEditarCarros()
+    {
+        $dadosCarros = Carros::all();
+        //dd($dadosCarros);
+        return view('editarCarro',[
+            'registrosCarros' => $dadosCarros]);
+    }
+
+    public function ApagarBancoCarros(Carros $registrosCarros){
+        //dd($registrosCarros);
+        $registrosCarros->delete();
+        //$Carros::FindOrFail(id)->delete();
+        return Redirect::route('editar-carros');
+    }
 }
