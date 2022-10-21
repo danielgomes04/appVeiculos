@@ -51,4 +51,9 @@ class CaminhaoController extends Controller
         //$Caminhao::FindOrFail(id)->delete();
         return Redirect::route('editar');
     }
+
+    public function MostrarAlterarCaminhao(Caminhao $registrosCaminhoes){
+        return view('alterarCaminhao', ['registrosCaminhoes' => $registrosCaminhoes]);
+    }
+
 }
