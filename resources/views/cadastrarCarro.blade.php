@@ -1,8 +1,8 @@
 @extends('padrao')
 @section('content')
 <section>
-<div class="container cadastroCaminhao">
-<form class="row g-3" method="post" action="{{route('salvar-banco')}}">
+<div class="container cadastroCarro">
+<form class="row g-3" method="post" action="{{route('salvar-banco-carro')}}">
   @csrf
   <div class="col-md-12">
     <label for="inputModelo" class="form-label">Modelo</label>

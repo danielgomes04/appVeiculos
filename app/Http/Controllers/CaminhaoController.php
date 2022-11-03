@@ -12,11 +12,6 @@ class CaminhaoController extends Controller
         return view('cadastrarCaminhao');
     }
 
-    public function Editar()
-    {
-        return view('editarCaminhao');
-    }
-
     public function SalvarBanco(Request $request){
         $dadosCaminhao = $request->validate(
             [
@@ -56,7 +51,7 @@ class CaminhaoController extends Controller
         //dd($registrosCaminhoes);
         $registrosCaminhoes->delete();
         //$Caminhao::FindOrFail(id)->delete();
-        return Redirect::route('editar');
+        return Redirect::route('editar-caminhao');
     }
 
     public function MostrarAlterarCaminhao(Caminhao $registrosCaminhoes){
@@ -75,7 +70,7 @@ class CaminhaoController extends Controller
         $registrosCaminhoes->fill($banco);
         $registrosCaminhoes->save();
 
-        return Redirect::route('editar');
+        return Redirect::route('editar-caminhao');
        #dd($registrosCaminhoes);
     }
 }
